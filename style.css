@@ -1,17 +1,12 @@
-htmls {
-  font-size: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+* {
+  font-family: 'Lato';
+  box-sizing: border-box;
 }
 
 body {
   background: #F7F7F7;
   margin: 0;
+  margin-top: 70px;
   padding: 0;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
@@ -19,38 +14,102 @@ body {
   line-height: 1.3;
 }
 
+nav{
+  display: flex;
+  position: fixed;
+  top:0;
+  width: 100%;
+  overflow: auto;
+  height: auto;
+}
+
 h1 {
-  background: #F7F7F7;
+  color: #272727;
+  flex-grow: 1;
   margin: 0;
-  padding: 0;
+  padding-left: 14px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 1.3;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
+hr {
+  color: #E4E4E4;
+  background-color: #E4E4E4;
+  height: 2px;
+  border-width: 0;
+}
+
+.title{
+  flex:1 1 200px;
+}
+
+.links {
+  display: inline-block;
+  text-align: center;
+  padding: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #939799;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.links:hover {
+  color: #272727;
+}
+
+.selected{
+  color: #272727;
+}
+
+.grid_cell{
+  position: relative;
+}
+
+.grid_image{ /*grid images for each project*/
+  display: block;
+  width: 100%;
+}
+
+.cell_hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(228, 228, 228, 0.85);
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.1s;
+  text-align: center;
 }
 
-.flex-jc-sb {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.cell_hover:hover{
+  opacity: 1;
 }
 
-.flex-jc-c {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.cell_title{
+  font-size: 15;
+  padding: 0px 30px 12px 30px;
+  color: #272727;
+  font-weight: bolder;
 }
 
-.flex-ai-c {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+/*------------------------RESPONSIVE-DESIGN--------------------------*/
+ /*DESKTOP*/                                                                     
+ @media all and (orientation:landscape){
+
+  .grid_cell{
+    float: left;
+    width: 50%;
+    padding: 30px;
+  }
+}   
 
 /*# sourceMappingURL=style.css.map */
