@@ -40,10 +40,6 @@ hr {
   border-width: 0;
 }
 
-p1 {
-  font-size: 16px;
-}
-
 .title{
   flex:1 1 200px;
 }
@@ -104,30 +100,35 @@ p1 {
   font-weight: bolder;
 }
 
-.footer {
-  padding: 10px 20px 20px 20px;
+
+.socials-list{
+  list-style: none;
+  text-decoration:none;
+  float:right;
+  position: relative;
 }
 
-.social-footer{
-  display: inline-block;
+.social-item{
+  float:right;
+  padding-right:14px;
+  font-size: 25px;
 }
 
 ion-icon {
   color: #272727;
-  float: right;
-}
-.icon_scale{
-  font-size: 25px;
-}
-.icons{
-  padding-right: 13px;
 }
 
 .copyright {
   display: inline-block;
-  padding-right: 13px;
+  padding-left: 14px;
+  padding-top: 25px;
+  font-size: 16px;
+  text-align: left;
 }
 
+.footer{
+  position:fixed;
+}
 
  /*DESKTOP*/                                                                     
  @media all and (orientation:landscape){
