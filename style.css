@@ -6,7 +6,6 @@
 body {
   background: #F7F7F7;
   margin: 0;
-  margin-top: 70px;
   padding: 0;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
@@ -16,7 +15,7 @@ body {
 
 nav{
   display: flex;
-  position: fixed;
+  margin-top: 10px;
   top:0;
   width: 100%;
   overflow: auto;
@@ -37,8 +36,12 @@ h1 {
 hr {
   color: #E4E4E4;
   background-color: #E4E4E4;
-  height: 2px;
+  height: 1.5px;
   border-width: 0;
+}
+
+p1 {
+  font-size: 16px;
 }
 
 .title{
@@ -101,13 +104,37 @@ hr {
   font-weight: bolder;
 }
 
-/*------------------------RESPONSIVE-DESIGN--------------------------*/
+.footer {
+  padding: 10px 20px 20px 20px;
+}
+
+.social-footer{
+  display: inline-block;
+}
+
+ion-icon {
+  color: #272727;
+  float: right;
+}
+.icon_scale{
+  font-size: 25px;
+}
+.icons{
+  padding-right: 13px;
+}
+
+.copyright {
+  display: inline-block;
+  padding-right: 13px;
+}
+
+
  /*DESKTOP*/                                                                     
  @media all and (orientation:landscape){
 
   .grid_cell{
     float: left;
-    width: 50%;
+    width: 33%;
     padding: 30px;
   }
 }   
