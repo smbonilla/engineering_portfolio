@@ -77,9 +77,8 @@ hr {
 .links {
   display: inline-block;
   text-align: center;
-  padding: 25px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-top: 25px;
+  padding-right: 40px;
   color: #939799;
   text-decoration: none;
   font-size: 15px;
@@ -129,7 +128,6 @@ hr {
   color: #272727;
   font-weight: bolder;
 }
-
 
 .socials-list{
   list-style: none;
@@ -193,8 +191,8 @@ ion-icon {
     display: flex;
     text-align: center;
     padding: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 25px;
+    padding-right: 40px;
     color: #939799;
     text-decoration: none;
     font-size: 15px;
@@ -209,6 +207,47 @@ ion-icon {
     width: 100%;
     text-align: center;
     display: flex;
+  }
+
+  #body {
+    padding:10px;
+    padding-top: 0;
+    padding-bottom:120px;   /* Height of the footer */
+  }
+  
+  #footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background-color:#F7F7F7;
+    height:120px;   /* Height of the footer */
+  }
+
+
+  .socials-list{
+    list-style: none;
+    text-decoration:none;
+    float: left;
+    position: relative;
+  }
+
+  .social-item{
+    text-align: center;
+    padding-right:14px;
+    font-size: 25px;
+  }
+
+  ion-icon {
+    color: #272727;
+  }
+
+  .copyright {
+    width: 100%;
+    padding-top: 21px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bolder;
+    color: #272727;
   }
   
 }
