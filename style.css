@@ -95,6 +95,8 @@ hr {
 
 .grid_cell{
   position: relative;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .grid_image{ /*grid images for each project*/
