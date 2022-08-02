@@ -156,40 +156,50 @@ ion-icon {
   color: #272727;
 }
 
+/*ABOUT ME*/ 
+
 .col_1{
-  width: 25%;
+  width: 40%;
   float: left;
 }
 
 .col_2{
-  width:75%;
+  width:60%;
   float: right;
 }
 
 div picture img{
-  max-width: 90%;
-  max-height: 75%;
+  max-width: 100%;
+  max-height: 100%;
   float:right;
   padding:60px;
 }
 
 .headshot{
-  max-width: 90%;
-  max-height: 90%;
-  padding: 10px;
+  display:block;
+  margin:auto;
+  max-width: 60%;
+  max-height: 60%;
+  padding: 5px;
 }
 
 div h3{
   text-align: center;
   font-weight: 300;
-  padding-left: 14px;
-  padding-bottom: 10px;  
+  padding-bottom: 5px;  
 }
 
 div h4{
   text-align: center;
   font-weight: 300;
+  font-size: 14px;
   padding-bottom: 14px;  
+}
+
+div h4 p{
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .CV{
@@ -225,7 +235,36 @@ div h4{
     width: 33%;
     padding: 30px;
   }
-}   
+}
+
+/*TABLET*/ 
+@media only screen and (min-width:700px) and (max-width:1200px){
+  .col_1{
+    width: 50%;
+    float: left;
+  }
+  
+  .col_2{
+    width:50%;
+    float: right;
+  }
+  
+  div picture img{
+    max-width: 100%;
+    max-height: 100%;
+    display:block;
+    margin:auto;
+    padding-bottom:60px;
+  }
+  
+  .headshot{
+    display:block;
+    margin:auto;
+    max-width: 65%;
+    max-height: 65%;
+    padding: 5px;
+  }
+}
 
  /*MOBILE*/ 
 @media only screen and (max-width:700px){
@@ -332,20 +371,23 @@ div h4{
   }
   
   .headshot{
+    display:block;
+    margin:auto;
     max-width: 100%;
     max-height: 100%;
-    padding: 10px;
+    padding: 5px;
   }
   
   div h3{
     text-align: center;
     font-weight: 400;
-    padding-bottom: 10px;  
+    padding-bottom: 5px;  
   }
   
   div h4{
     text-align: center;
     font-weight: 300;
+    font-size: 14px;
     padding-bottom: 14px;  
   }
   
