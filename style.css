@@ -231,9 +231,10 @@ div h4 p{
 @media all and (orientation:landscape){
 
   .grid_cell{
-    float: left;
+    display:inline-block;
+    margin:auto;
     width: 33%;
-    padding: 30px;
+    padding: 40px;
   }
 }
 
