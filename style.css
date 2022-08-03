@@ -209,9 +209,9 @@ div h4{
 }
 
 div h4 p{
-  text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .CV{
