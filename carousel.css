@@ -1,0 +1,84 @@
+.carousel {
+    position:relative;
+    height: 40vw;
+    width: 70vw;
+    max-height: 500px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.carousel__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel__track-container{
+    background: lightgreen;
+    height: 100%;
+    position: relative;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style:none;
+}
+
+.carousel__slide{
+    position: absolute;
+    top: 0;
+    bottom:0; 
+    width: 100%;
+}
+
+.carousel__button{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    color:  #272727;
+}
+
+.carousel__button ion-icon:hover{
+    color: #939799;
+}
+
+.carousel__button--left{
+    left: -40px;
+}
+
+.carousel__button--right{
+    right: -40px;
+}
+
+.carousel__button ion-icon{ 
+    font-size: 6vw;
+}
+
+.carousel__nav{
+    background:pink;
+    padding-bottom: 50px;
+}
+
+.carousel__indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 20px;
+    height:20px;
+    background: black;
+}
+
+@media screen and (min-width: 500px) {
+    .carousel__button ion-icon{
+       font-size: 4vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .carousel__button ion-icon{
+       font-size: 30px;
+    }
+}
