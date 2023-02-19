@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sierra Bonilla | About Me</title>
+    <title>Sierra Bonilla | Image Registration</title>
 
     <!-- link to favicon of website -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <!-- create meta data tags -->
-    <meta content="I am Sierra Bonilla. I am a Biomedical Engineer with 5 years of research and engineering experience at 
+    <meta content="I am Sierra Bonilla. I am a Biomedical Engineer with 4 years of research and engineering experience at 
     University of Washington, Otonexus Medical Technologies, University College London, and Intellectual Ventures. This is
     my engineering portfolio." name="description">
     <meta name="author" content="Sierra Bonilla">
     <meta property="og:title" content="Sierra Bonilla" />
-    <meta property="og:description" content="About Me" />
+    <meta property="og:description" content="Project" />
     <meta property="og:image" content="images/featuredimage.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -20,6 +20,7 @@
     <!--link external fonts and style sheet-->
     <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet'>
     <link rel='stylesheet' href="style.css">
+    <link rel='stylesheet' href="carousel.css">
 
   </head>
 
@@ -33,14 +34,14 @@
             <nav>
                 <div class="title">
                     <a class = "titlelink" href="/">
-                        <div>
+                        <div class="title">
                             <h1>SIERRA   BONILLA</h1>
                         </div>
                     </a>
                 </div>
                 <div class="right-links">
                     <a class="links" href="/">PORTFOLIO</a>
-                    <a class="links selected" href="aboutme.html">ABOUT</a>
+                    <a class="links" href="aboutme.html">ABOUT</a>
                 </div>
             </nav>
 
@@ -50,39 +51,41 @@
 
         <div id ="body">
 
-            <div class = "col_1">
-                <div>
-                    <h4>
-                        <p>Currently:</p>
-                        <p>Computational Scientist at University College London Hospitals.</p>
-                        <p>Previously: </p>
-                        <p>Medical Device Design Engineer in R&D at Otonexus Medical Technologies.
-                            <br>
-                            Research Assistant & Teaching Assistant in Bioengineering Department at University of Washington.
-                            <br> 
-                            Mechanical Engineering Intern in R&D at Intellectual Ventures.                            
-                        </p>
-                        <p>
-                            MSc in Biomedical Engineering graduated with Distinction from University College London.
-                        </p>
-                        <p>
-                            BSc in Bioengineering and Minor in Mathematics graduated with Departmental Honors from University of Washington.
-                        </p>
-                    </h4>
+            <div class="carousel">
+                <button class="carousel__button carousel__button--left">
+                    <ion-icon name="chevron-back-outline" alt ="left button"></ion-icon>
+                </button>
+
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide">
+                            <img src="images/imagereg/SierraBonilla_Dissertation_pg1.png" class = "carousel__image" alt = "disspg1">
+                        </li>
+                        <li class="carousel__slide">
+                            <img src="images/imagereg/SierraBonilla_Dissertation_pg2.png" class = "carousel__image" alt = "disspg2">
+                        </li>
+                        <li class="carousel__slide">
+                            <img src="images/imagereg/SierraBonilla_Dissertation_pg3.png" class = "carousel__image" alt = "disspg3">
+                        </li>
+                    </ul>
                 </div>
+
+                <button class="carousel__button carousel__button--right">
+                    <ion-icon name="chevron-forward-outline" alt="right button"></ion-icon>
+                </button>
             </div>
 
-            <div class = "col_2">
-                <picture>
-                    <img class = "headshot" src="images/SierraBonillaHeadshotV2.png" alt="headshot">
-                </picture>
-
-                <div class="CV">
-                    <a href="PDF/CV/BonillaCV.pdf" download="BonillaCV" class="CVlink">Download Resume</a>
-                </div>
+            <div class="carousel__nav">
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
             </div>
 
-         </div>
+            <div class="CV">
+                <a href="CV/BonillaCV.pdf" download="BonillaDissertation" class="CVlink">Download Dissertation</a>
+            </div>
+
+        </div>
 
         <div id="footer">
 
