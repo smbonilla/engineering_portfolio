@@ -21,6 +21,7 @@ nav{
 
 #mobile-nav{
   display: none;
+  visibility: hidden;
 }
 
 h1 {
@@ -264,6 +265,7 @@ div h4 p{
 
   #mobile-nav{
     display:contents;
+    visibility:visible;
   }
 
   .hamburger {
