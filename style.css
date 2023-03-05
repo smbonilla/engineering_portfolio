@@ -57,15 +57,16 @@ hr {
 }
 
 #body {
-  padding-bottom:100px;   /* Height of the footer */
+  padding-bottom:60px;   /* Height of the footer */
 }
 
 #footer {
-  position:absolute;
+  /* position:absolute; */
   bottom:0;
   width:100%;
   background-color:#F7F7F7;
   height:60px;   /* Height of the footer */
+  float: left;
 }
 
 .title{
@@ -94,7 +95,7 @@ hr {
 }
 
 .grid_cell{
-  float: left; 
+  float: left;
   position: relative;
   padding: 1%;
   width: 48%;
@@ -107,7 +108,7 @@ hr {
 }
 
 .cell_hover{
-  position: absolute;
+  position:absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -120,6 +121,7 @@ hr {
   opacity: 0;
   transition: opacity 0.1s;
   text-align: center;
+  border-radius: 5px;
 }
 
 .cell_hover:hover{
@@ -234,12 +236,13 @@ div h4 p{
 @media all and (orientation:landscape){
 
   .grid_cell{
-    float: left; 
+    float: center; 
     width:30%;
     position: relative;
-    padding: 1vw;
+    padding-left: 2%;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
   }
-
 }
 
 /*TABLET*/ 
@@ -256,7 +259,7 @@ div h4 p{
   }
 
   #body {
-    padding-bottom: 800px;   /* Height of the footer */
+    padding-bottom: 60px;   /* Height of the footer */
   }
 
 }
@@ -375,11 +378,11 @@ div h4 p{
   #body {
     padding:10px;
     padding-top: 0;
-    padding-bottom: 120px;   /* Height of the footer */
+    padding-bottom: 60px;   /* Height of the footer */
   }
   
   #footer {
-    position:absolute;
+    /* position:absolute; */
     bottom:0;
     background-color:#F7F7F7;
     align-items: center;
