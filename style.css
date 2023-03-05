@@ -6,7 +6,6 @@ body {
   background: #F7F7F7;
   height: 100%;
   font-weight: 100;
-  font-size: 10px;
   line-height: 1.3;
   text-align: center;
 }
@@ -20,14 +19,18 @@ nav{
   height: auto;
 }
 
+#mobile-nav{
+  display: none;
+}
+
 h1 {
   color: #272727;
   text-align: left;
+  font-family: 'Lato';
   margin: 0;
   font-weight: 300;
   padding-left: 20px;
   font-size: 50px;
-  font-family: 'Lato';
 }
 
 h1:hover{
@@ -35,9 +38,8 @@ h1:hover{
 }
 
 hr {
-  color: #E4E4E4;
   background-color: #E4E4E4;
-  height: 2.5px;
+  height: 1.5px;
   border-width: 0;
 }
 
@@ -75,13 +77,11 @@ hr {
 
 .links {
   display: inline-block;
-  text-align: center;
   padding-top: 25px;
   padding-right: 40px;
   color: #939799;
   text-decoration: none;
-  font-size: 20px;
-  font-weight: bolder;
+  font-size: 15px;
 }
 
 .links:hover {
@@ -102,6 +102,7 @@ hr {
 .grid_image{ /*grid images for each project*/
   display:inline-block;
   width:100%;
+  border-radius: 5px;
 }
 
 .cell_hover{
@@ -125,7 +126,6 @@ hr {
 }
 
 .cell_title{
-  font-size: 15;
   padding: 0px 30px 12px 30px;
   color: #272727;
   font-weight: bolder;
@@ -253,27 +253,85 @@ div h4 p{
     float: right;
   }
 
-  .headshot{
-    display:block;
-    margin:auto;
-    max-width: 65%;
-    max-height: 65%;
-    padding: 5px;
-  }
-
 }
 
  /*MOBILE*/ 
 @media only screen and (max-width:700px){
 
-  #header {
-    height: 140px;
-    width: 100%;
+  nav{
+    display: none;
   }
 
-  nav{
-    width: 100%;
-    position: absolute;
+  #mobile-nav{
+    display:contents;
+  }
+
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: none;
+    background: none;
+    font-size: 40px;
+    color: #272727;
+    cursor: pointer;
+  }
+
+  .closeIcon {
+    display: none;
+    color: #272727;
+    font-size: 40px;
+  }
+
+  .menu {
+    position: fixed;
+    transform: translateY(-110%);
+    height: 110%;
+    transition: transform 0.2s;
+    top: -10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background:  rgba(228, 228, 228, 0.95);
+    list-style: none;
+    padding-top: 30vh;
+  }
+
+  .menu li a{
+    text-decoration: none;
+    color: #939799;
+    font-size: 40px;
+    font-family: 'Lato';
+    font-weight: 300;
+    display:inline-block;
+    padding-bottom:20px;
+    margin-right: 10vw;
+  }
+
+  .menu li a:hover{
+    color: #272727;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
+
+  .mobile-name{
+    font-family: 'Lato';
+    font-size: 50px;
+    font-weight: 350;
+    width: 80vw;
+    padding-top: 10px;
+    margin: auto;
+  }
+
+
+  hr {
+    width: 95vw;
+    height: 1px;
   }
 
   h1 {
@@ -310,17 +368,16 @@ div h4 p{
   #body {
     padding:10px;
     padding-top: 0;
-    padding-bottom:120px;   /* Height of the footer */
+    padding-bottom: 90px;   /* Height of the footer */
   }
   
   #footer {
     position:absolute;
     bottom:0;
-    width:100%;
     background-color:#F7F7F7;
-    height:100px;   /* Height of the footer */
+    align-items: center;
+    height:60px;  
   }
-
 
   .socials-list{
     list-style: none;
@@ -328,11 +385,14 @@ div h4 p{
     padding-left: 37vw;
     float: left;
     position: relative;
+    margin:auto;
+    align-items: center;
   }
 
   .social-item{
     text-align: center;
     padding-right:14px;
+    margin:auto;
     font-size: 25px;
   }
 
@@ -342,8 +402,9 @@ div h4 p{
 
   .copyright {
     width: 100%;
-    padding-top: 21px;
-    margin-left: -30vw;
+    padding-top: 0;
+    padding-bottom: 5px;
+    margin-left: -35vw;
     font-size: 16px;
     text-align: center;
     font-weight: bolder;
@@ -369,10 +430,10 @@ div h4 p{
   
   .headshot{
     display:block;
-    margin:auto;
-    max-width: 40%;
-    max-height: 40%;
-    padding: 5px;
+    max-width: 50%;
+    max-height: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
   div h3{
