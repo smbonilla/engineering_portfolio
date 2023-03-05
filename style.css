@@ -128,6 +128,7 @@ hr {
 
 .cell_title{
   padding: 0px 30px 12px 30px;
+  font-size: 20px;
   color: #272727;
   font-weight: bolder;
 }
@@ -254,6 +255,10 @@ div h4 p{
     float: right;
   }
 
+  #body {
+    padding-bottom: 800px;   /* Height of the footer */
+  }
+
 }
 
  /*MOBILE*/ 
@@ -370,7 +375,7 @@ div h4 p{
   #body {
     padding:10px;
     padding-top: 0;
-    padding-bottom: 90px;   /* Height of the footer */
+    padding-bottom: 800px;   /* Height of the footer */
   }
   
   #footer {
