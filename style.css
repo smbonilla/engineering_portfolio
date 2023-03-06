@@ -1,5 +1,5 @@
 * {
-  font-family: 'Tahoma';
+  font-family: Tahoma,Verdana,Segoe,sans-serif; 
 }
 
 body {
@@ -57,7 +57,7 @@ hr {
 }
 
 #body {
-  padding-bottom:60px;   /* Height of the footer */
+  padding-bottom:0px;   /* Height of the footer */
 }
 
 #footer {
@@ -259,7 +259,7 @@ div h4 p{
   }
 
   #body {
-    padding-bottom: 60px;   /* Height of the footer */
+    padding-bottom: 0px;   /* Height of the footer */
   }
 
 }
@@ -378,7 +378,7 @@ div h4 p{
   #body {
     padding:10px;
     padding-top: 0;
-    padding-bottom: 60px;   /* Height of the footer */
+    padding-bottom: 0px;   /* Height of the footer */
   }
   
   #footer {
