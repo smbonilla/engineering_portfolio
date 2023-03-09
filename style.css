@@ -244,6 +244,15 @@ div h4 p{
   padding-top: 3vh;
 }
 
+.paper-titles{
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.paper-item{
+  padding-bottom: 10px;
+}
+
  /*DESKTOP*/                                                                     
 @media all and (orientation:landscape){
 
