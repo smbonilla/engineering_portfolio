@@ -19,6 +19,11 @@ nav{
   height: auto;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 #mobile-nav{
   display: none;
   visibility: hidden;
@@ -230,6 +235,13 @@ div h4 p{
   padding-bottom: 5px;  
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.papers{
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5vh;
 }
 
  /*DESKTOP*/                                                                     
