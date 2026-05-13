@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.45;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.site-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000;
+}
+
+.site-title {
+  font-size: 1.75rem;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.site-nav a:hover {
+  border-bottom-color: #000;
+  background: transparent;
+  color: #000;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+.hero-text {
+  flex: 1 1 200px;
+  min-width: 0;
+}
+
+.hero-tagline {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  background: none;
+  border: 1px solid #000;
+  color: #000;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  line-height: 1;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.hero-photo {
+  flex: 0 0 auto;
+}
+
+.hero-photo img {
+  display: block;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 1px solid #000;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #000;
+}
+
+.experience-list,
+.pub-list,
+.news-list {
+  list-style: none;
+}
+
+.experience-list li,
+.pub-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.experience-list li:last-child,
+.pub-list li:last-child {
+  border-bottom: none;
+}
+
+.pub-ol {
+  list-style: decimal;
+  padding-left: 1.35rem;
+  margin: 0;
+}
+
+.pub-ol li {
+  padding: 0.65rem 0 0.65rem 0.35rem;
+  border-bottom: 1px dotted #ccc;
+}
+
+.pub-ol li:last-child {
+  border-bottom: none;
+}
+
+.pub-title {
+  display: block;
+  font-weight: bold;
+}
+
+.pub-title a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pub-meta {
+  display: block;
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 0.25rem;
+}
+
+.news-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px dotted #ccc;
+  align-items: flex-start;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-logo {
+  flex: 0 0 auto;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border: 1px solid #e0e0e0;
+  padding: 4px;
+  background: #fff;
+}
+
+/* DCA mark is light-on-transparent — mid gray tile so it reads on the page */
+.news-logo--dca {
+  background: #7a7a7a;
+  border-color: #666;
+}
+
+.news-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.news-title {
+  font-weight: bold;
+  margin-bottom: 0.35rem;
+}
+
+.news-meta {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.news-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.news-links a {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.news-links a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+}
+
+.footer-social a {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.footer-social a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.muted {
+  color: #666;
+}
+
+.pub-lead {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}

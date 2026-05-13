@@ -1,133 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sierra Bonilla </title>
-
-    <!-- link to favicon of website -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-    <!-- create meta data tags -->
-    <meta content="I am Sierra Bonilla. I am a Biomedical Engineer with 5 years of research and engineering experience at 
-    University of Washington, Otonexus Medical Technologies, University College London, and Intellectual Ventures. This is
-    my engineering portfolio." name="description">
-    <meta name="author" content="Sierra Bonilla">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sierra Bonilla</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta
+      name="description"
+      content="Sierra Bonilla — PhD candidate at UCL Centre for Artificial Intelligence; surgical computer vision, 3D reconstruction, and medical imaging."
+    />
+    <meta name="author" content="Sierra Bonilla" />
     <meta property="og:title" content="Sierra Bonilla" />
-    <meta property="og:description" content="About Me" />
+    <meta property="og:description" content="Research and teaching — UCL" />
     <meta property="og:image" content="images/featuredimage.png" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-    <!--link external fonts and style sheet-->
-    <link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' rel='stylesheet'>
-    <link rel='stylesheet' href="style.css">
-
+    <link rel="stylesheet" href="site.css" />
   </head>
+  <body>
+    <header class="site-header">
+      <h1 class="site-title">Sierra Bonilla</h1>
+      <nav class="site-nav" aria-label="Page">
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Previously…</a>
+      </nav>
+    </header>
 
-  <body id="webpage">
-
-    <div id ="container">
-
-        <!-- create header -->
-        <div id="header">
-
-            <div id = "mobile-nav">
-
-                <ul class="menu">
-                  <li><a class="menuItem" href="papers.html">PAPERS</a></li>
-                  <li><a class="menuItem" href="projects.html">PROJECTS</a></li>
-                  <li><a class="menuItem" href="/">ABOUT ME</a></li>
-                </ul>
-                <button class="hamburger">
-                  <ion-icon name="menu-outline" class="menuIcon material-icons">menu</ion-icon>
-                  <ion-icon name="close-outline" class="closeIcon material-icons">close</ion-icon>
-                  <!-- <i class="menuIcon material-icons">menu</i>
-                  <i class="closeIcon material-icons">close</i> -->
-                </button>
-      
-                <section class = "mobile-name">
-                  SIERRA BONILLA
-                </section>
-      
-            </div>
-
-            <nav>
-                <div class="title">
-                    <a class = "titlelink" href="/">
-                        <div>
-                            <h1>SIERRA   BONILLA</h1>
-                        </div>
-                    </a>
-                </div>
-                <div class="right-links">
-                    <a class="links" href="papers.html">PAPERS</a>
-                    <a class="links" href="projects.html">PORTFOLIO</a>
-                    <a class="links selected" href="/">ABOUT</a>
-                </div>
-            </nav>
-
-        </div>
-
-        <hr/>
-
-        <div id ="body">
-
-            <div class = "col_1">
-                <div>
-                    <h4>
-                        <p><span style="background-color: #E4E4E4">Currently:</span></p>
-                        <p>FT PhD Candidate at <a href="https://www.ucl.ac.uk/ai-centre/ucl-centre-artificial-intelligence" target="_blank" onmouseover="this.style.color='#939799'" onmouseout="this.style.color='#272727'"">University College London Centre for Artificial Intelligence.</a></p>
-                        <p>PT Computational Scientist at University College London Hospitals.</p>
-                        <p><span style="background-color: #e4e4e4">Previously: </span></p>
-                        <p>Medical Device Design Engineer in R&D at Otonexus Medical Technologies.</p>
-                        <p>Research Assistant & Teaching Assistant in Bioengineering Department at University of Washington.</p> 
-                        <p> Mechanical Engineering Intern in R&D at Intellectual Ventures.</p>
-                        <p>MSc in Biomedical Engineering graduated with Distinction from University College London.</p>
-                        <p>
-                            BSc in Bioengineering and Minor in Mathematics graduated with Departmental Honors from University of Washington.
-                        </p>
-                    </h4>
-                </div>
-            </div>
-
-            <div class = "col_2">
-                <picture>
-                    <img class = "headshot" src="images/SierraBonilla_Headshot_2023_sq.png" alt="headshot">
-                </picture>
-
-                <div class="CV">
-                    <!-- <a href="PDF/CV/BonillaCV.pdf" download="BonillaCV" class="CVlink">Download Resume</a> -->
-                    <a href="PDF/CV/bonillaCV_2024.pdf" target="_blank" class="CVlink">Resume</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="footer">
-
-            <div class = "social-footer">
-
-                <p1 class = "copyright">Copyright © Sierra Bonilla 2023</p1>
-
-                <ul class = "socials-list">
-                    <li class="social-item"><a href="https://www.linkedin.com/in/sierra-bonilla" target="_blank">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                    </a></li>
-                    <li class="social-item"><a href="https://github.com/smbonilla" target="_blank">
-                    <ion-icon name="logo-github"></ion-icon>
-                    </a></li>
-                    <li class="social-item"><a href="mailto:sierrabonilla14@gmail.com" target="_blank">
-                    <ion-icon name="mail"></ion-icon>
-                    </a></li>
-                </ul>
-
-            </div>
-
-        </div>
-
+    <div class="hero">
+      <div class="hero-text">
+        <p class="hero-tagline">
+          PhD candidate, UCL Centre for Artificial Intelligence. Computational Vision Scientist, SPAICE. 
+        </p>
+        <a class="btn" href="PDF/CV/bonillaCV_2026.pdf" target="_blank" rel="noopener noreferrer">View CV (PDF)</a>
+      </div>
+      <div class="hero-photo">
+        <img src="images/SierraBonilla_Headshot_2023_sq.png" width="140" height="140" alt="Sierra Bonilla" />
+      </div>
     </div>
 
-    <script src="app/js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    <section id="news" aria-labelledby="news-heading">
+      <h2 id="news-heading">News</h2>
+      <ul class="news-list">
+        <li class="news-item">
+          <img class="news-logo news-logo--dca" src="images/dca-workshop-logo.png" alt="" width="72" height="72" />
+          <div class="news-body">
+            <div class="news-title">Data Curation &amp; Augmentation in Medical Imaging; ECCV Workshop 2026</div>
+            <div class="news-meta">
+              Co-organizing the 2nd edition at ECCV 2026 (1st edition at CVPR 2024). 8–9 September 2026. Co-lead organizer.
+            </div>
+            <div class="news-links">
+              <a href="https://dca-in-mi.github.io/#home" target="_blank" rel="noopener noreferrer">Workshop site</a>
+            </div>
+          </div>
+        </li>
+        <li class="news-item">
+          <img class="news-logo" src="images/imed_challeng_logo.png" alt="" width="72" height="72" />
+          <div class="news-body">
+            <div class="news-title">iMED Challenge; MICCAI Workshop 2026</div>
+            <div class="news-meta">
+              Co-organizing the 2026 iMED Challenge for Multi-endoscope surgical 3D perception. MICCAI / EndoVis. Challenge day 27 September 2026.
+            </div>
+            <div class="news-links">
+              <a href="https://imed-challenge.github.io/" target="_blank" rel="noopener noreferrer">Challenge site</a>
+              <a href="https://endovis.org/" target="_blank" rel="noopener noreferrer">EndoVis</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="publications" aria-labelledby="publications-heading">
+      <h2 id="publications-heading">Publications</h2>
+      <ol class="pub-ol">
+        <li>
+          <span class="pub-title"
+            ><a href="https://link.springer.com/article/10.1007/s11548-026-03633-z" target="_blank" rel="noopener noreferrer"
+              >HyKey: hyperspectral keypoint detection and matching in minimally invasive surgery</a
+            ></span
+          >
+          <span class="pub-meta">IJCARS. Published 27 April 2026. Presented at IPCAI.</span>
+        </li>
+        <li>
+          <span class="pub-title">LumenGSLAM: Online Physically Based Rendering with Gaussian Splatting for Robust Endoscopic Reconstruction and Tracking</span>
+          <span class="pub-meta">Presented at IPCAI. Under review.</span>
+        </li>
+        <li>
+          <span class="pub-title"
+            ><a href="https://link.springer.com/chapter/10.1007/978-3-031-91989-3_8" target="_blank" rel="noopener noreferrer"
+              >Mismatched: Evaluating the limits of image matching approaches and benchmarks</a
+            ></span
+          >
+          <span class="pub-meta">ECCV 2024 workshops. First online 12 May 2025.</span>
+        </li>
+        <li>
+          <span class="pub-title"
+            ><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10879583" target="_blank" rel="noopener noreferrer"
+              >Robotic arm platform for multi-view image acquisition and 3d reconstruction in minimally invasive surgery</a
+            ></span
+          >
+          <span class="pub-meta">IEEE Robotics and Automation Letters. Presented at IROS. 4 April 2025.</span>
+        </li>
+        <li>
+          <span class="pub-title"
+            ><a href="https://papers.miccai.org/miccai-2024/paper/2298_paper.pdf" target="_blank" rel="noopener noreferrer"
+              >Gaussian pancakes: geometrically-regularized 3d gaussian splatting for realistic endoscopic reconstruction</a
+            ></span
+          >
+          <span class="pub-meta">MICCAI 2024. 3 October 2024.</span>
+        </li>
+        <li>
+          <span class="pub-title"
+            ><a href="https://www.sciencedirect.com/science/article/pii/S0301562921001563" target="_blank" rel="noopener noreferrer"
+              >Microbubble-enhanced heating: Exploring the effect of microbubble concentration and pressure amplitude on high-intensity focused ultrasound treatments</a
+            ></span
+          >
+          <span class="pub-meta"><em>Ultrasound in Medicine &amp; Biology</em>. August 2021.</span>
+        </li>
+      </ol>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Previously…</h2>
+      <ul class="experience-list">
+        <li>
+          Teaching assistant (PGTA) for three MSc modules, including <em>Robot Navigation</em> and
+          <em>Object Detection</em>.
+        </li>
+        <li>AI Research Scientist, Intuitive Surgical, Sunnyvale, California.</li>
+        <li>Computer Scientist, University College London Hospitals (UCLH).</li>
+        <!-- <li>
+          Medical device R&amp;D (Otonexus); research and teaching assistant (Bioengineering, University of Washington);
+          mechanical engineering intern (Intellectual Ventures).
+        </li> -->
+        <li>
+          Education: MSc Biomedical Engineering with Distinction (UCL); BSc Bioengineering with
+          Departmental Honors and minor in Mathematics (University of Washington).
+        </li>
+      </ul>
+    </section>
+
+    <footer class="site-footer">
+      <span>© 2026 Sierra Bonilla</span>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/sierra-bonilla" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/smbonilla" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </footer>
+
+    <!--
+      Legacy portfolio grid (projects) — preserved for reference; not shown on site.
+      Previously in projects.html:
+      - DCGAN butterfly, QuenchBand hydration monitor, website design, brainspace, NFT, hand EMG, etc.
+    -->
   </body>
 </html>
