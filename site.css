@@ -198,6 +198,12 @@ h2 {
   border-color: #666;
 }
 
+/* NeurIPS square mark — slight padding so it sits cleanly in the tile */
+.news-logo--neurips {
+  padding: 6px;
+  object-fit: contain;
+}
+
 .news-body {
   flex: 1;
   min-width: 0;
