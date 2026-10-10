@@ -116,10 +116,67 @@ a:hover {
   gap: 2rem;
 }
 
-.art-gallery img {
+.art-piece {
+  position: relative;
+  margin: 0;
+}
+
+.art-piece img {
   display: block;
   width: 100%;
   height: auto;
+  transition: opacity 0.22s ease 0.1s;
+}
+
+.art-piece.is-open img {
+  opacity: 0.25;
+}
+
+.art-piece.is-open .art-plaque {
+  opacity: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .art-piece:hover img,
+  .art-piece:focus-within img {
+    opacity: 0.25;
+  }
+
+  .art-piece:hover .art-plaque,
+  .art-piece:focus-within .art-plaque {
+    opacity: 1;
+  }
+}
+
+.art-plaque {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  max-width: 85%;
+  padding: 0.9rem 1.15rem;
+  background: #fff;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s ease 0.1s;
+}
+
+.art-plaque-title,
+.art-plaque-medium {
+  display: block;
+}
+
+.art-plaque-title {
+  font-size: 0.95rem;
+}
+
+.art-plaque-medium {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: #333;
 }
 
 .site-nav a {
