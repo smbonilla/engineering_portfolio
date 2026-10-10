@@ -134,6 +134,7 @@ a:hover {
 
 .art-piece.is-open .art-plaque {
   opacity: 1;
+  visibility: visible;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -145,10 +146,12 @@ a:hover {
   .art-piece:hover .art-plaque,
   .art-piece:focus-within .art-plaque {
     opacity: 1;
+    visibility: visible;
   }
 }
 
 .art-plaque {
+  display: block;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -156,12 +159,14 @@ a:hover {
   transform: translate(-50%, -50%);
   width: max-content;
   max-width: 85%;
+  margin: 0;
   padding: 0.9rem 1.15rem;
   background: #fff;
   text-align: center;
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.22s ease 0.1s;
+  transition: opacity 0.22s ease 0.1s, visibility 0.22s ease 0.1s;
 }
 
 .art-plaque-title,
