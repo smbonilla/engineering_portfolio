@@ -304,6 +304,26 @@ h2 {
   margin-top: 0.25rem;
 }
 
+.pub-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: 0.55rem;
+  vertical-align: middle;
+}
+
+.pub-links a {
+  display: inline-flex;
+  color: #444;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.pub-links a:hover {
+  background: transparent;
+  color: #000;
+}
+
 .news-item {
   display: flex;
   gap: 1rem;
